@@ -1,0 +1,82 @@
+html, body {
+    background: #000000;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: -2px;
+    color: #fff;
+    font-size: 75px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricprecision;
+    -webkit-animation: fadein 5s;
+    /*cursor: none;*/
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#mainCont{
+  width: 90%;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tabBlock {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 0px #000000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+}
+
+.clock {
+    vertical-align: inherit;
+    font-size: 150px;
+    color: #FFFFFF;
+    padding: 0 10px;
+    line-height: 150px;
+}
+
+.clocklg {
+    vertical-align: bottom;
+    font-size: 60px;
+    font-weight: normal;
+    color: #FFFFFF;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.seconds {
+    margin-top: 100px;
+}
+
+
+.digital{
+    display: none;
+}
+
+#digital {
+    display: none;
+}
+
+#mainTable {
+    border-collapse: collapse;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    font-size: large;
+}
