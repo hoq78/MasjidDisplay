@@ -1,5 +1,5 @@
 {
-  "name": "csvtojson",
+  "name": "csvtojson2",
   "description": "A tool concentrating on converting csv data to JSON with customised parser supporting",
   "author": "Keyang Xiang <keyang.xiang@gmail.com>",
   "homepage": "https://github.com/Keyang/node-csvtojson",
@@ -281,6 +281,7 @@
     "request": "^2.81.0"
   },
   "dependencies": {
+    "csvtojson": "^1.1.9",
     "lodash": "^4.17.3",
     "strip-bom": "1.0.0"
   },
