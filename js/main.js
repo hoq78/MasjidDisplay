@@ -62,9 +62,9 @@ function displayTimetable(data){
         for(var key in data[i]){
           if (key == prayerName){
             $('#' + prayerName + '2').append(time(data[i][key]));
-            $('#' + prayerName + '4').append(time(data[i+1][key]));
           }
           else if (key == prayerName + ' J'){
+            $('#' + prayerName + '4').append(time(data[i+1][key]));
             $('#' + prayerName + '3').append(data[i][key]);
           }
 
