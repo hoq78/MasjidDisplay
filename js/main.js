@@ -1,7 +1,7 @@
 /**
 * Main Function that runs when the page is loaded and initialises all the functions
 */
-const CSVPath = '/csv/timetable.csv';
+const CSVPath = 'csv/timetable.csv';
 
 prayer = ['Fajr','Zuhr','Asr','Maghrib','Isha'];
 

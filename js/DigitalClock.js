@@ -5,7 +5,8 @@
     var sec = dateObject.getSeconds();
     var time;
 
-    min = Ticking(min); //pads the time to 2 digits when the time is less than 2 digits long
+    hrs = Ticking(hrs); //pads the time to 2 digits when the time is less than 2 digits long
+		min = Ticking(min); //pads the time to 2 digits when the time is less than 2 digits long
     sec = Ticking(sec);
 
     $("#dc_second").html(sec);
