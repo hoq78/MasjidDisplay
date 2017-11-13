@@ -1,59 +1,123 @@
-.jumbotron{
-    background: url"img/bg.jpg" no-repeat center center; 
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-}
+
 html, h1 {
-    font-size: 5.0em;
+    font-size: 1.6em;
+	  font-size-adjust: auto;
 	  text-align: center;
-    margin-top: -1.0em;
-    margin-bottom:50.em;
-    margin-left: 0;
-    margin-right: 0;
+    margin-top: 0em;
+    margin-bottom:0.em;
+    margin-left: 10.em;
+    margin-right: 10.em;
     font-weight: bolder;
+	  font-size-adjust: auto;
 	  color: darkseagreen
 }
 
 html, h2 {
-    font-size: 0.6em;
+    font-size: 0.7em;
 	  text-align: center;
     margin-top: 0.0em;
     margin-bottom: 0.em;
     margin-left: 0;
     margin-right: 0;
     font-weight: bolder;
+	font-size-adjust: auto;
 	  color: darkseagreen
 }
 
 html, h3 {
-    font-size: 0.7em;
+    font-size: 0.6em;
 	  text-align: center;
-    margin-top: 0;
-    margin-bottom: 0.1em;
-    margin-left: 1;
-    margin-right: 1;
+    margin-top: 5;
+    margin-bottom: 0.em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bolder;
+	line-height: 0.em;
+	font-size-adjust: auto;
+	  color: white
+
+		}
+
+html, h4 {
+    font-size: 0.8em;
+	  text-align: center;
+    margin-top: 10;
+    margin-bottom: 0.em;
+    margin-left: 0;
+    margin-right: 0;
+	font-size-adjust: auto;
+	  color: black;
+
+	}
+
+html, h6 {
+    font-size: 1em;
+	  text-align: center;
+	font-size-adjust: auto;
+    margin-top: 20;
+    margin-bottom: 0.em;
+    margin-left: 0;
+    margin-right: 0;
+	  color: black;
+
+	}
+
+.slide {
+    
+		object-fit: fill;
+    margin-top: 5;
+    margin-bottom: 0.em;
+    margin-left: 0;
+    margin-right: ;
+  
+
+	            
+
+	       
+}
+
+html, p1 {
+    font-size: 0.3em;
+	  text-align: center;
+	font-size-adjust: auto;
+    margin-top: 0.em;
+    margin-bottom: -.em;
+    margin-left: 0;
+    margin-right: ;
     font-weight: bolder;
 	  color: darkseagreen
 
-	  
-
-	 
-          
+	       
 }
+
+html, p2 {
+    font-size: 0.3em;
+	  text-align: center;
+	font-size-adjust: auto;
+    margin-top: 0;
+    margin-bottom: 0.em;
+    margin-left: 0em;
+    margin-right: ;
+    font-weight: bolder;
+	  color: darkseagreen;
+		
+
+	       
+}
+
 body {
     background: #000000;
     padding: 0px;
     margin: 0px;
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
+    width:auto;
+    height: auto;
+    overflow: inherit;
     margin: 0;
     font-family: 'Work Sans', sans-serif;
-    letter-spacing: 0px;
+    letter-spacing: -1px;
     font-size: 50px;
     font-weight: bolder;
+	font-size-adjust: auto;
     color: #ffff;
     -webkit-font-smoothing: antialiased;
     text-rendering: geometricprecision;
@@ -70,11 +134,12 @@ body {
 }
 
 #mainCont{
-  width: 95%;
+  width: 100%;
 	height: 100%:
   align-items: center;
-  margin: 0 auto;
-  text-align: center;
+  margin: 0;
+	font-size-adjust: auto;
+  
 }
 
 .Time {
@@ -83,42 +148,47 @@ body {
 }
 
 td, th {
-  padding: 1px;
+  padding: 12px;
+	table-layout: auto;
   text-align: center;
+	font-size-adjust: auto;
+	margin-bottom: 30px;
 }
 td{
-  font-size: 25px;
+  font-size: 20px;
 }
 th{
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .tabBlock {
     background-color: rgba(0, 0, 0, 0);
     border: solid 0px #000000;
-    border-radius: 1px;
-    -moz-border-radius: 1px;
-    -webkit-border-radius: 1px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
     width: 100%;
     display: block;
-    margin-top: 0px;
+    margin-top: -20px;
+	margin-bottom: 20px;
+	font-size-adjust: auto;
 }
 
 .clock {
     vertical-align: inherit;
-    font-size: 100px;
+    font-size: 90px;
     color: #FFF00F;
-    padding: 0 10px;
+    padding: 20px;
     line-height: 100px;
 }
 
 .clocklg {
     vertical-align: bottom;
-    font-size: 90px;
+    font-size: 80px;
     font-weight: bolder;
     color: #FFF00F;
-    width: 100px;
-    margin-bottom: 20px;
+    width: 90px;
+    margin-bottom: 0px;
 }
 
 .seconds {
@@ -136,8 +206,8 @@ th{
 
 #mainTable {
     border-collapse: collapse;
-    width: 95%;
+    width: 100%;
     height: 100%;
-    margin: auto;
-    font-size-adjust: auto
+    margin: 0;
+    font-size-adjust: auto;
 }
