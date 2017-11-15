@@ -15,7 +15,31 @@ html, body {
     -webkit-animation: fadein 5s;
 }
 
-@-webkit-keyframes fadein {
+@media all and (max-width: 1200px) {
+    /* screen size until 1200px */
+    body {
+        font-size: 1.5em;
+        /* 1.5x default size */
+    }
+}
+
+@media all and (max-width: 1000px) {
+    /* screen size until 1000px */
+    body {
+        font-size: 1.2em;
+        /* 1.2x default size */
+    }
+}
+
+@media all and (max-width: 500px) {
+    /* screen size until 500px */
+    body {
+        font-size: 0.8em;
+        /* 0.8x default size */
+    }
+}
+
+1 @-webkit-keyframes fadein {
     from {
         opacity: 0;
     }
@@ -24,27 +48,34 @@ html, body {
     }
 }
 
-#mainCont{
-  width: 90%;
-  align-items: center;
-  margin: 0 auto;
-  text-align: center;
+#timetableContent {
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .Time {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 td, th {
-  padding: 1px;
-  text-align: center;
+    padding: 1px;
+    text-align: center;
 }
-td{
-  font-size: 35px;
+
+td {
+    font-size: 35px;
 }
-th{
-  font-size: 40px;
+
+#timetable td {
+    width: 25%;
+    word-wrap: normal;
+}
+
+th {
+    font-size: 40px;
 }
 
 .tabBlock {
@@ -79,8 +110,7 @@ th{
     margin-top: 100px;
 }
 
-
-.digital{
+.digital {
     display: none;
 }
 
