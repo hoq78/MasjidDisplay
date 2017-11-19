@@ -3,7 +3,7 @@
 */
 const CSVPath = 'csv/timetable.csv';
 
-prayer = ['Fajr','Zuhr','Asr','Maghrib','Isha'];
+prayer = ['Fajr','Zuhr','Asr','Maghrib','Isha','Jummah','Khutbah'];
 
 function main(){
   DisplayTime();
@@ -64,12 +64,11 @@ function displayTimetable(data){
             $('#' + prayerName + '2').append(time(data[i][key]));
           }
           else if (key == prayerName + ' J'){
-            $('#' + prayerName + '4').append(time(data[i+1][key]));
-            $('#' + prayerName + '3').append(data[i][key]);
+            $('#' + prayerName + '3').append(time(data[i+1][key]));
+            $('#' + prayerName + '4').append(data[i][key]);
           }
-
       }
     }
   }
- };
+ }
 }

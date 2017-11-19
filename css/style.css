@@ -1,15 +1,16 @@
 
 html, h1 {
-    font-size: 1.6em;
+    font-size: 50px;
 	  font-size-adjust: auto;
 	  text-align: center;
     margin-top: 0em;
     margin-bottom:0.em;
     margin-left: 10.em;
     margin-right: 10.em;
-    font-weight: bolder;
+    font-family: 'arial';
+    font-weight: bold;
 	  font-size-adjust: auto;
-	  color: darkseagreen
+	  color: black;
 }
 
 html, h2 {
@@ -27,16 +28,25 @@ html, h2 {
 html, h3 {
     font-size: 0.6em;
 	  text-align: center;
-    margin-top: 5;
+    margin-top: 3;
     margin-bottom: 0.em;
     margin-left: 0;
     margin-right: 0;
-    font-weight: bolder;
+    font-family: 'arial';
+    font-weight: bold;
 	line-height: 0.em;
 	font-size-adjust: auto;
-	  color: white
+	  color: black;
 
 		}
+
+html, h7 {
+  font-size: 32px;
+  font-family: 'arial';
+  font-weight: bolder;
+  color:white;
+  text-align=centre;
+}
 
 html, h4 {
     font-size: 0.8em;
@@ -63,18 +73,17 @@ html, h6 {
 	}
 
 .slide {
-    
-		object-fit: fill;
-    margin-top: 5;
+
+		object-fit: cover;
+    width: 100%;
+    margin-top: 9.5px;
     margin-bottom: 0.em;
     margin-left: 0;
+
     margin-right: ;
-  
-
-	            
-
-	       
 }
+
+
 
 html, p1 {
     font-size: 0.3em;
@@ -87,7 +96,7 @@ html, p1 {
     font-weight: bolder;
 	  color: darkseagreen
 
-	       
+
 }
 
 html, p2 {
@@ -100,16 +109,16 @@ html, p2 {
     margin-right: ;
     font-weight: bolder;
 	  color: darkseagreen;
-		
 
-	       
+
+
 }
 
 body {
     background: #000000;
     padding: 0px;
     margin: 0px;
-    width:auto;
+    width:99%;
     height: auto;
     overflow: inherit;
     margin: 0;
@@ -137,28 +146,49 @@ body {
   width: 100%;
 	height: 100%:
   align-items: center;
-  margin: 0;
+  margin: ;
 	font-size-adjust: auto;
-  
+  background: linear-gradient(#006309, #39db47);
+
 }
 
 .Time {
   width: 100%;
   border-collapse: collapse;
+
 }
 
 td, th {
-  padding: 12px;
+  padding: 21px;
 	table-layout: auto;
   text-align: center;
-	font-size-adjust: auto;
 	margin-bottom: 30px;
 }
 td{
-  font-size: 20px;
+  font-size: 33px;
+  font-family: 'arial';
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: white;
+  height: 20px;
+
 }
 th{
-  font-size: 25px;
+  font-size: 29px;
+  font-family: 'arial';
+  font-weight: bold;
+  line-height: 15px;
+  color: yellow;
+}
+#date{
+  line-height: 40px;
+  padding-bottom: 0.5em;
+  font-family: 'arial';
+  font-weight: bolder;
+  font-size: 40px;
+  color: white;
+
 }
 
 .tabBlock {
@@ -176,25 +206,23 @@ th{
 
 .clock {
     vertical-align: inherit;
-    font-size: 90px;
+    font-size: 70px;
     color: #FFF00F;
-    padding: 20px;
     line-height: 100px;
 }
 
-.clocklg {
+.clocklg{
     vertical-align: bottom;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bolder;
     color: #FFF00F;
     width: 90px;
-    margin-bottom: 0px;
+    line-height: 2em;
 }
 
 .seconds {
-    margin-top: 100px;
-}
 
+}
 
 .digital{
     display: none;
@@ -208,6 +236,36 @@ th{
     border-collapse: collapse;
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: -1em;
     font-size-adjust: auto;
+
+}
+#tnj{
+  height: 2.5em;
+  padding: ;
+  background-color:#0000FF;
+  width: 100%;
+  margin-left: -2px;
+  margin-top: 10px;
+
+}
+
+#Khutbah {
+
+  color: black;
+  font-size: 50px;
+
+}
+#Khutbah3 {
+  color: black;
+
+}
+#ht {
+  font-size: 30px;
+  font-family: arial black;
+}
+
+#Jummah2 {
+  color: black;
+
 }
