@@ -53,15 +53,16 @@ function csvJSON(csv){
 
 function displayTimetable(data){
   var table = document.getElementById('timetable');
-  date = new Date('07/07/2016');
+  date = new Date();
+  console.log(date.toLocaleDateString());
   console.log(data);
   for(i=0; i<data.length; i++){
-    if(data[i].Date == date.getDate()){
+    if(data[i].Date == date.toLocaleDateString()){
       for(j=0;j<prayer.length;j++){
         prayerName = prayer[j];
         for(var key in data[i]){
           if (key == prayerName){
-            $('#' + prayerName + '2').append(time(data[i][key]));
+            $('#' + prayerName + '2').append(time(data[i++][key]));
           }
           else if (key == prayerName + ' J'){
             $('#' + prayerName + '3').append(time(data[i+1][key]));
