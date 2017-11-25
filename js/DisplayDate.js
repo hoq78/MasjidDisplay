@@ -15,6 +15,5 @@ function getDate() {
     day = daysInTheWeek[daynumber];
     month = monthsInYear[month];
     let dateOut = day + ", " + month + " " +dateOfMonth + " " + year;
-    console.log("something happened")
     $("#date").html(dateOut);
 }

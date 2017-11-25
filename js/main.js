@@ -6,10 +6,17 @@ const CSVPath = 'csv/timetable.csv';
 prayer = ['Fajr','Zuhr','Asr','Maghrib','Isha','Jummah','Khutbah'];
 
 function main(){
+  var time
   DisplayTime();
   getDate();
   getCSV(CSVPath,csvJSON);
+  // time = setTimeout(main,1000);
 };
+
+function pushData(data){
+  displayTimetable(data);
+  nextJammatCountdown(data);
+}
 
 function time( str ) {
     if ( !/:/.test( str ) ) { str += ':00'; }
@@ -48,16 +55,16 @@ function csvJSON(csv){
   ;}
 
   //return result; //JavaScript object
-   displayTimetable(result); //JSON
+   pushData(result); //JSON
 };
 
 function displayTimetable(data){
   var table = document.getElementById('timetable');
   date = new Date();
-  console.log(date.toLocaleDateString());
-  console.log(data);
   for(i=0; i<data.length; i++){
-    if(data[i].Date == date.toLocaleDateString()){
+    dateLookingAt = new Date(data[i].Date.slice(6,10),data[i].Date.slice(0,2)-1,data[i].Date.slice(3,5));
+    console.log(dateLookingAt);
+    if(dateLookingAt.toLocaleDateString() == date.toLocaleDateString()){
       for(j=0;j<prayer.length;j++){
         prayerName = prayer[j];
         for(var key in data[i]){
